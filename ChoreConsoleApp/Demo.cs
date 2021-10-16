@@ -42,10 +42,16 @@ namespace ChoreConsoleApp
                 {
                     Console.WriteLine(chore);
                 }
-
+                Hold();
                 //The programming functionality should not live in the Main method.Attempt to break to code into methods
             }
+
         }
-    
+        private static void Hold()
+        {
+            Console.Write("Press any key to continue...");
+            Console.ReadKey(true);
+        }
+
     }
 }
